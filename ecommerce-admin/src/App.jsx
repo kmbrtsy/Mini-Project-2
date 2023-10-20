@@ -1,13 +1,21 @@
 import React from 'react';
 import Adminlogin from './components/Adminlogin';
+import {Box, Container  } from '@mui/material';
 import "./App.css";
 
 
 function App() {
   return (
-    <div>
+    <Container>
+      <Box  sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        width: 500,
+        height: 500,
+      }}>
       <Adminlogin />
-    </div>
+      </Box>
+    </Container>
   )
 }
 
