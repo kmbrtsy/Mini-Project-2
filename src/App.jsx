@@ -10,15 +10,9 @@ const router = createBrowserRouter(routes)
 
 function App() {
   return (
-    <Container sx={{
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }}>
-      <Box fullWidth  >
+    <>
       <RouterProvider router={router} />
-      </Box>
-    </Container>
+    </>  
   )
 }
 

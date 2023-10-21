@@ -8,7 +8,7 @@ export const routes = [
     element: <LandingPage />,
   },
   {
-    path: "/admin/login",
+    path: "/login",
     element: <Login />,
   },
   {

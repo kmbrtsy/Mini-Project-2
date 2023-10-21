@@ -1,7 +1,17 @@
 import React from 'react'
-import { Button, TextField, FormControlLabel, Box, Typography, Container } from '@mui/material';
+import { Button, TextField, FormControlLabel, Box, Typography, Grid, Paper, Checkbox, Link,} from '@mui/material';
+
+
 function Login() {
-  
+  const paperStyle={
+                  padding :50,
+                  height:'auto',
+                  width: '40vw',
+                  borderRadius: '50px',
+                  backgroundColor: '#e6e6e67d',
+                  margin:"10vh auto"};
+  const btnstyle={margin:'20px auto',
+                  backgroundColor: '#39A848'}
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
 
@@ -20,7 +30,13 @@ function Login() {
   };
 
   return (
-    <Container component={"main"} maxWidth={"xs"}>
+    <Grid component={"main"} maxWidth={"xs"}>
+      <Paper 
+            elevation={10} 
+            style={paperStyle}
+            >
+      
+
       <Box sx={{
         display: 'flex',
         justifyContent: 'center'
@@ -40,9 +56,9 @@ function Login() {
           required
           fullWidth
           id="text"
-          label="Username"
-          name="username"
-          autoComplete="username"
+          label="Email"
+          name="email"
+          autoComplete="email"
           autoFocus
           value={email}
           onChange={handleEmailChange}
@@ -61,29 +77,40 @@ function Login() {
         />
       </Box>
 
-      <Box>
-        <Button
-          type="submit"
-          fullWidth
-          variant="contained"
-          sx={{
-            mt: 3,
-            mb: 2,
-            p: 2,
-            bgcolor: 'success.main'
-          }}
-          onClick={handleSubmit}
-        >
-          <Typography
-            sx={{
-
-            }}
-          >
-            Log In
-          </Typography>
-        </Button>
-      </Box>
-    </Container>
+      <FormControlLabel
+         control={
+          <Checkbox
+            name="checkedB"
+            color="primary"
+          />
+          }
+          label="Remember me"
+      />
+      <Button 
+              type='submit' 
+              color='primary' 
+              variant="contained"
+              style={btnstyle}
+              onClick={handleSubmit} 
+              fullWidth
+              >
+                Sign in
+      </Button>
+      
+      <Typography >
+          <Link href="#" >
+                Forgot password?
+          </Link>
+      </Typography>
+      <Typography > 
+            Create an account 
+          <Link href="#" sx={{ margin: '0 0 0 5px'}}> 
+          Sign Up 
+          </Link>
+      </Typography>
+      
+      </Paper>
+    </Grid>
   );
   
 }

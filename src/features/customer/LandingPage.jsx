@@ -1,8 +1,22 @@
+
 import React from 'react'
+import NavigationBar from '../../components/NavigationBar'
+import { Grid, Typography } from '@mui/material'
 
 function LandingPage() {
   return (
-    <div>LandingPage</div>
+    
+    <>
+      <NavigationBar />
+      <Grid container spacing={2} columns={16}>
+        <Grid xs={9}>
+          <Typography>Featured item</Typography>
+        </Grid>
+        <Grid xs={7}>
+          <Typography>Featured photo</Typography>
+        </Grid>
+        </Grid>
+    </> 
   )
 }
 
