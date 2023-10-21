@@ -1,8 +1,7 @@
-import React from 'react';
+import React from 'react'
 import { Button, TextField, FormControlLabel, Box, Typography, Container } from '@mui/material';
-
-
-function Adminlogin() {
+function Login() {
+  
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
 
@@ -27,12 +26,12 @@ function Adminlogin() {
         justifyContent: 'center'
       }}>
         <Typography
-          component="h1" variant="h5"
+          component="h1" variant="h6"
           sx={{
-            fontWeight: '700'
+            fontWeight: '600 '
           }}
         >
-          Admin Sign in
+          Log in to your account
         </Typography>
       </Box>
       <Box>
@@ -40,10 +39,10 @@ function Adminlogin() {
           margin="normal"
           required
           fullWidth
-          id="email"
-          label="Admin Email"
-          name="email"
-          autoComplete="email"
+          id="text"
+          label="Username"
+          name="username"
+          autoComplete="username"
           autoFocus
           value={email}
           onChange={handleEmailChange}
@@ -86,6 +85,7 @@ function Adminlogin() {
       </Box>
     </Container>
   );
+  
 }
 
-export default Adminlogin
+export default Login
