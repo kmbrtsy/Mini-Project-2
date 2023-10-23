@@ -8,8 +8,17 @@ function Login() {
                   height:'auto',
                   width: '40vw',
                   borderRadius: '50px',
-                  backgroundColor: '#e6e6e67d',
-                  margin:"10vh auto"};
+                  backgroundColor: '#ceded5',
+                  position: 'absolute',
+                  top: '50%',
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)',
+                  
+                  // bgcolor: 'background.paper',
+                  
+                  boxShadow: 24,
+                  p: 4,
+                  };
   const btnstyle={margin:'20px auto',
                   backgroundColor: '#39A848'}
   const [email, setEmail] = React.useState('');
@@ -31,8 +40,9 @@ function Login() {
 
   return (
     <Grid component={"main"} maxWidth={"xs"}>
+
       <Paper 
-            elevation={10} 
+            elevation={0} 
             style={paperStyle}
             >
       

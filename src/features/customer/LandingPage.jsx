@@ -10,10 +10,10 @@ function LandingPage() {
       <NavigationBar />
       <Grid container spacing={2} columns={16}>
         <Grid xs={9}>
-          <Typography>Featured item</Typography>
+          <Typography>Featured item 1</Typography>
         </Grid>
         <Grid xs={7}>
-          <Typography>Featured photo</Typography>
+          <Typography>featured photo</Typography>
         </Grid>
         </Grid>
     </> 
