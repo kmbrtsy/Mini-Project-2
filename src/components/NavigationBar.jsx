@@ -1,26 +1,44 @@
-import { Container } from '@mui/material'
+import { styled, Paper, Box, Grid, Link } from '@mui/material'
 import React from 'react'
+
+import LoginModal from '../features/login/LoginModal.js'
+
+
+const Item = styled(Paper)(() => ({
+  backgroundColor: 'transparent',
+  textAlign: 'center',
+}));
+
 
 function NavigationBar() {
   return (
-    <>
-    <Container  sx={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          width: '100vh',
-          height: 'auto',
-         }}>
-    
-    <a href="#"> Home </a>
-    <a href="#"> Categories </a>
-    <a href="#"> All Products </a>
-    <a href="#"> Acount </a>
-    <a href="#"> Cart </a>
-         
-    </Container>
-
-    </>
-  )
+    <Box>
+      <Grid container spacing={1}>
+        <Grid item xs={2}>
+          <Item>
+            <Link>Home</Link>
+          </Item>
+        </Grid>
+        <Grid item xs={2}>
+          <Item>
+            <Link>All Products</Link>
+          </Item>
+        </Grid>
+        <Grid item xs={2}>
+          <Item>
+            <Link>
+              Category
+            </Link>
+          </Item>
+        </Grid>
+        <Grid item xs={2}>
+          <Item>
+            <LoginModal />
+          </Item>
+        </Grid>
+      </Grid>
+    </Box>
+  );
 }
 
-export default NavigationBar
+export default NavigationBar;
