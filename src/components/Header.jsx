@@ -1,4 +1,4 @@
-import { Grid } from '@mui/material'
+import { Container, Grid, Typography } from '@mui/material'
 import React from 'react'
 import NavigationBar from './NavigationBar'
 import SearchBar from './SearchBar'
@@ -6,11 +6,13 @@ import SearchBar from './SearchBar'
 
 function Header() {
   return (
-    
+      <Container>
       <Grid  container spacing={1} >
         <Grid  item xs={3}>
-          <img src='#' />
-        </Grid>
+          <Typography sx={{padding: '0px 50px'}}>
+            Kartcheck
+          </Typography>
+        </Grid> 
         <Grid item xs={6}>
           <NavigationBar />
          </Grid>
@@ -18,7 +20,7 @@ function Header() {
           <SearchBar />
         </Grid>
     </Grid>
-    
+    </Container>
   )
 }
 

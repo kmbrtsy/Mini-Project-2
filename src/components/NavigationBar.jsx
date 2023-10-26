@@ -1,4 +1,4 @@
-import { styled, Paper, Box, Grid, Link } from '@mui/material'
+import { styled, Paper, Container, Grid, Link } from '@mui/material'
 import React from 'react'
 
 import LoginModal from '../features/login/LoginModal.js'
@@ -12,19 +12,22 @@ const Item = styled(Paper)(() => ({
 
 function NavigationBar() {
   return (
-    <Box>
-      <Grid container spacing={1}>
-        <Grid item xs={2}>
+    
+      <Grid container spacing={1} sx={{
+        display: 'flex',
+        alignItems: 'center'
+      }}>
+        <Grid item xs={3}>
           <Item>
             <Link>Home</Link>
           </Item>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={3}>
           <Item>
             <Link>All Products</Link>
           </Item>
         </Grid>
-        <Grid item xs={2}>
+        <Grid item xs={3}>
           <Item>
             <Link>
               Category
@@ -37,7 +40,7 @@ function NavigationBar() {
           </Item>
         </Grid>
       </Grid>
-    </Box>
+    
   );
 }
 
