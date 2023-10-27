@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid, Link } from '@mui/material'
 import LoginModal from '../features/login/LoginModal.js'
-import { Item } from './style.js';
+
 import * as styles from './style.js'
 
 
