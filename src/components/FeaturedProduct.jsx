@@ -1,12 +1,13 @@
-import { Box, Button, Container, Grid, Typography } from '@mui/material'
 import React from 'react'
+import { Box, Button, Grid, Typography } from '@mui/material'
+import * as styles from "./style.js"
 
 function FeaturedProduct() {
   return (
     
-      <Grid container spacing={1} sx={{
+      <Grid container spacing={1} style={styles.flexAlignCenter}  sx={{
         display: 'flex',
-        alignItems: 'center',
+        jsutifyContent:' center',
         height: '95vh',
         margin: '0'
       }}>
@@ -33,7 +34,7 @@ function FeaturedProduct() {
           <Button>add to cart</Button>
           </Box>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={5} style={styles.flexJustCenter}>
           <img src='#'></img>
         </Grid>
       </Grid>

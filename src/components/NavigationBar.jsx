@@ -1,22 +1,16 @@
-import { styled, Paper, Container, Grid, Link } from '@mui/material'
 import React from 'react'
-
+import { Grid, Link } from '@mui/material'
 import LoginModal from '../features/login/LoginModal.js'
+import { Item } from './style.js';
+import * as styles from './style.js'
 
 
-const Item = styled(Paper)(() => ({
-  backgroundColor: 'transparent',
-  textAlign: 'center',
-}));
 
 
 function NavigationBar() {
   return (
     
-      <Grid container spacing={1} sx={{
-        display: 'flex',
-        alignItems: 'center'
-      }}>
+      <Grid container spacing={1} style={styles.flexJustCenter}>
         <Grid item xs={3}>
           <Item>
             <Link>Home</Link>
