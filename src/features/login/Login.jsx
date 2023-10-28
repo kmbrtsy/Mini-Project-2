@@ -47,10 +47,7 @@ function Login() {
             >
       
 
-      <Box sx={{
-        display: 'flex',
-        justifyContent: 'center'
-      }}>
+      <Box justifyContent='center'>
         <Typography
           component="h1" variant="h6"
           sx={{

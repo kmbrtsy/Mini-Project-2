@@ -5,9 +5,8 @@ import * as styles from "./style.js"
 function FeaturedProduct() {
   return (
     
-      <Grid container spacing={1} style={styles.flexAlignCenter}  sx={{
-        display: 'flex',
-        jsutifyContent:' center',
+      <Grid justifyContent='center' alignContent='center' container sx={{
+        
         height: '95vh',
         margin: '0'
       }}>

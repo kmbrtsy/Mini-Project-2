@@ -1,7 +1,5 @@
 
 import React from 'react'
-
-// import { Grid, Typography } from '@mui/material'
 import Header from '../../components/Header'
 import FeaturedProduct from '../../components/FeaturedProduct'
 import PopularPicks from '../../components/PopularPicks'

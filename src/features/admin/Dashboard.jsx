@@ -1,6 +1,5 @@
 import React from 'react'
-import { Avatar, Box, Container, Grid } from '@mui/material'
-import * as styles from '../../components/style'
+import { Grid } from '@mui/material'
 import AdminNavigations from './AdminNavigations'
 
 

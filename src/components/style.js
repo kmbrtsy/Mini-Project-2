@@ -9,8 +9,9 @@ export const Item = styled(Paper)(() => ({
 }));
 
 // Popular Picks
-export const popPickStyle={
-  height: '25vh',
+export const popPicItem={
+  height: 'auto',
   backgroundColor: '#39A848',
-  margin: '0'
+  padding: '100px'
+  
 };  
