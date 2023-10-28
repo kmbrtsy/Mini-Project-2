@@ -1,16 +1,6 @@
 import { Paper, styled } from "@mui/material";
 
 
-export const flexJustCenter={
-  display: 'flex',
-  justifyContent: 'center'
-};
-
-export const flexAlignCenter={
-  display: 'flex',
-  alignItems: 'Center'
-};
-
 
 //item
 export const Item = styled(Paper)(() => ({

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, Modal } from '@mui/material';
+import {  Link, Modal } from '@mui/material';
 import Login from './Login';
 
 
@@ -10,7 +10,7 @@ export default function BasicModal() {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Account</Button>
+      <Link onClick={handleOpen}>Account</Link>
       <Modal
         open={open}
         onClose={handleClose}
